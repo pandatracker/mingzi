@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chinese Name Variants</title>
-<meta name="description" content="Generate romanisation and formatting variants of Chinese names (Pinyin, Wade-Giles, Cantonese, Hokkien, Teochew, Hakka and more) for searches.">
+<meta name="description" content="Generate romanisation and formatting variants of Chinese names (Pinyin, Wade-Giles, Cantonese, Hokkien, Teochew, Hakka and more) for compliance and due-diligence searches.">
 <style>
 :root{
   --bg:#f6f5f2; --panel:#ffffff; --ink:#1d1f23; --muted:#5f6670; --faint:#8a9099; --line:#e3e1dc; --line2:#efede8;
@@ -168,7 +168,7 @@ code{font-family:var(--mono);font-size:12.5px;background:var(--chip);padding:1px
   <header>
     <div>
       <h1><span class="zh">名</span>Chinese Name Variants</h1>
-      <p class="sub">Romanisation and formatting variants of a Chinese name for on-line searches — Mandarin, Taiwanese, Cantonese, Hokkien, Teochew, Hakka and more.</p>
+      <p class="sub">Romanisation and formatting variants of a Chinese name for compliance, sanctions and due-diligence searches — Mandarin, Taiwanese, Cantonese, Hokkien, Teochew, Hakka and more.</p>
     </div>
     <div class="hdr-actions">
       <button class="ghost" id="themeBtn" title="Toggle light/dark theme"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="vertical-align:-2px;margin-right:4px"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>Theme</button>
@@ -838,7 +838,7 @@ function pojParse(s) {
 // SG/MY/Penang/PH style spellings from (toneless) Pe̍h-ōe-jī
 const HOK_FIN = {
   a: ['ah', 'a'], ah: ['ah'], ai: ['ai', 'ye', 'ay'], au: ['au', 'ow'], am: ['am'], an: ['an'], ang: ['ang'], ap: ['ap'], at: ['at'], ak: ['ak'],
-  e: ['e', 'eh', 'ay'], eh: ['eh'], ek: ['ek', 'eck', 'aik'], eng: ['eng', 'ing'],
+  e: ['eh', 'ay', 'e'], eh: ['eh'], ek: ['ek', 'eck', 'aik'],   // final -e is usually written -eh / -ay in SG/MY (Teh, Lay), rarely plain -e eng: ['eng', 'ing'],
   i: ['ee', 'i'], ih: ['ih'], ia: ['ia', 'iah', 'eah'], iah: ['iah', 'eah'], iak: ['iak', 'eak'], iam: ['iam', 'eam'], ian: ['ian', 'ien', 'ean'], iang: ['iang'],
   iap: ['iap', 'eap'], iat: ['iat', 'eat'], iau: ['iau', 'eow', 'iow'], io: ['io', 'eo', 'eoh'], ioh: ['ioh', 'eoh'], iok: ['iok', 'eok'],
   iong: ['iong', 'eong'], iu: ['iu', 'iew'], it: ['it'], ip: ['ip'], im: ['im'], in: ['in'], iun: ['iun'],
@@ -930,7 +930,7 @@ function hakSyl(tp) {
 const TEO_INI = ['bh', 'gh', 'ng', 'b', 'p', 'm', 'd', 't', 'n', 'l', 'g', 'k', 'h', 'z', 'c', 's', 'r'];
 const TEO_FIN = {
   a: ['ah', 'a'], ah: ['ah'], ai: ['ai', 'ye'], ao: ['au', 'ao', 'ow'], am: ['am'], ang: ['ang'], ap: ['ap'], ak: ['ak'],
-  E: ['e', 'eh', 'ay'], Eh: ['eh'], Eng: ['eng'], Ek: ['ek', 'eck'],
+  E: ['eh', 'ay', 'e'], Eh: ['eh'], Eng: ['eng'], Ek: ['ek', 'eck'],
   e: ['er', 'u'], eh: ['er', 'eh'], eng: ['eng', 'ung'], ek: ['ek', 'uk'],
   i: ['ee', 'i'], ih: ['ih'], ia: ['ia', 'iah', 'ea'], iah: ['iah', 'eah'], iak: ['iak', 'eak'], iam: ['iam'], iang: ['iang'], iap: ['iap'],
   iao: ['iau', 'iao', 'eow'], io: ['io', 'eo', 'eoh'], ioh: ['ioh', 'eoh'], iok: ['iok', 'eok'], iong: ['iong', 'eong'], iou: ['iou', 'iew', 'eow'],
